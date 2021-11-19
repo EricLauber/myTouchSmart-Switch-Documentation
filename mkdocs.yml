@@ -8,7 +8,7 @@ nav:
     - About: about.md
   - About:
     - about.md
-  - Service Endpoint
+  - Service Endpoint:
     - service.md
 
 theme:
