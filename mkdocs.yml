@@ -8,6 +8,8 @@ nav:
     - About: about.md
   - About:
     - about.md
+  - Service Endpoint
+    - service.md
 
 theme:
   name: material

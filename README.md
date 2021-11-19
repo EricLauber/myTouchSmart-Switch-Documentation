@@ -6,3 +6,4 @@ These devices depend upon Jasco's (currently) free web service for control of th
 
 This repository seeks to document how Jasco's APIs work with the goal of eventually building an alternative API or service that can replace Jasco's, enabling end users to operate without dependence on external systems.
 
+[Click here to browse the API documentation](https://ericlauber.github.io/myTouchSmart-Switch-Documentation/).
