@@ -6,7 +6,7 @@ These devices depend upon Jasco's (currently) free web service for control of th
 
 This repository seeks to document how Jasco's APIs work with the goal of eventually building an alternative API or service that can replace Jasco's, enabling end users to operate without dependence on external systems.
 
-These pages are built using [MkDocs](https://www.mkdocs.org/getting-started/) and [Material theme](https://squidfunk.github.io/mkdocs-material/).
+These pages are built using [MkDocs](https://www.mkdocs.org/getting-started/) and [Material theme](https://squidfunk.github.io/mkdocs-material/). This isn't an ideal format and I would like to switch over to Swagger UI if possible.
 
 ## Documentation Layout
 
