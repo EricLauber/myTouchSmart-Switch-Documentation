@@ -10,7 +10,7 @@ Provide user credentials to myTouchSmart in order to generate a token used in su
 
   `https://myts.yunext.com/api/service/user/login/MYTS`
 
-### Method:
+### Method
 
 `POST`
   
@@ -18,17 +18,24 @@ Provide user credentials to myTouchSmart in order to generate a token used in su
 
 
 Required:
+
 - `username=[Email Address]`
+
 - `password=[Encrypted String]`
 
 Optional:
+
 - `phoneType=[Model of Phone]`
+
 - `appType=[Type of the calling application]`
+
 - `appVersion=[Version of the calling application]`
+
 - `sign=[sign]`
+
 - `phoneSysVersion=[Android version]`
 
-### Success Response:
+### Success Response
 
 Code: 600 <br/>
 Content:
@@ -42,7 +49,7 @@ Content:
 }
 ```
  
-### Error Responses:
+### Error Responses
 
 Code: 400 <br />
 Returns an Apache Tomcat/8.0.39 Error Report:
@@ -64,26 +71,35 @@ Content:
 }
 ```
 
-### Sample Call:
+### Sample Call
 
 For the required inputs:
+
 - Username: YourAccount@domain.com
+
 - Encrypted Password: SomePassword
 
 `curl -d "username=YourAccount%40domain.com&password=SomePassword" https://myts.yunext.com/api/service/user/login/MYTS`
 
 For the required and optional inputs:
+
 - Username: YourAccount@domain.com
+
 - Encrypted Password: SomePassword
+
 - Phone Type: Pixel 5
+
 - App Version: myTS 2.2
+
 - App Type: 1
+
 - Sign: 123XYZ
+
 - Phone System Version: Android 12
 
   `curl -d "username=YourAccount%40domain.com&password=SomePassword&phoneType=Pixel%205&appVersion=2.2&appType=1&sign=123XYZ&phoneSysVersion=Android%3A12" https://myts.yunext.com/api/service/user/login/MYTS`
 
-## Notes:
+## Notes
 
 ### URL Parameters
 
