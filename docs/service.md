@@ -1,62 +1,94 @@
 # Service
 
-**Login**
+Service appears to provide access to information that is account-focused instead of device-focused.
+
+## Log into myTouchSmart
 ----
-  Provide user credentials to myTouchSmart in order to generate a token used in subsequent calls.
+Provide user credentials to myTouchSmart in order to generate a token used in subsequent calls.
 
-* **URL**
+### URL
 
-  api/service/user/login/
+  `https://myts.yunext.com/api/service/user/login/MYTS`
 
-* **Method:**
+### Method:
+
+`POST`
   
-  <_The request type_>
+### URL Parameters
 
-  `GET`
-  
-*  **URL Params**
 
-   <_If URL params exist, specify them in accordance with name mentioned in URL section. Separate into optional and required. Document data constraints._> 
+Required:
+- `username=[Email Address]`
+- `password=[Encrypted String]`
 
-   **Required:**
+Optional:
+- `phoneType=[Model of Phone]`
+- `appType=[Type of the calling application]`
+- `appVersion=[Version of the calling application]`
+- `sign=[sign]`
+- `phoneSysVersion=[Android version]`
+
+### Success Response:
+
+Code: 600 <br/>
+Content:
+```
+{
+  "code": 600,
+  "data": {
+      "token": "[token]"
+  },
+  "success": true
+}
+```
  
-   `password=[encryptedstring]`
-   `username=[emailaddress]`
+### Error Responses:
 
-   **Optional (are these actually optional?):**
- 
-   `phoneType=`
-   `appType=`
-   `sign=`
-   `phoneSysVersion=`
+Code: 400 <br />
+Returns an Apache Tomcat/8.0.39 Error Report:
 
-* **Data Params**
+Content:
+```
+HTTP Status 400
+The request sent by the client was syntactically incorrect.
+Apache Tomcat/8.0.39
+```
 
-  <_If making a post request, what should the body payload look like? URL Params rules apply here too._>
+Code: 602 <br />
+Content:
+```
+{
+  "msg": "username or password error",
+  "code": 602,
+  "success": false
+}
+```
 
-* **Success Response:**
-  
-  <_What should the status code be on success and is there any returned data? This is useful when people need to to know what their callbacks should expect!_>
+### Sample Call:
 
-  * **Code:** 200 <br />
-    **Content:** `{ id : 12 }`
- 
-* **Error Response:**
+For the required inputs:
+- Username: YourAccount@domain.com
+- Encrypted Password: SomePassword
 
-  <_Most endpoints will have many ways they can fail. From unauthorized access, to wrongful parameters etc. All of those should be liste d here. It might seem repetitive, but it helps prevent assumptions from being made where they should be._>
+`curl -d "username=YourAccount%40domain.com&password=SomePassword" https://myts.yunext.com/api/service/user/login/MYTS`
 
-  * **Code:** 401 UNAUTHORIZED <br />
-    **Content:** `{ error : "Log in" }`
+For the required and optional inputs:
+- Username: YourAccount@domain.com
+- Encrypted Password: SomePassword
+- Phone Type: Pixel 5
+- App Version: myTS 2.2
+- App Type: 1
+- Sign: 123XYZ
+- Phone System Version: Android 12
 
-  OR
+  `curl -d "username=YourAccount%40domain.com&password=SomePassword&phoneType=Pixel%205&appVersion=2.2&appType=1&sign=123XYZ&phoneSysVersion=Android%3A12" https://myts.yunext.com/api/service/user/login/MYTS`
 
-  * **Code:** 422 UNPROCESSABLE ENTRY <br />
-    **Content:** `{ error : "Email Invalid" }`
+## Notes:
 
-* **Sample Call:**
+### URL Parameters
 
-  <_Just a sample call to your endpoint in a runnable format ($.ajax call or a curl request) - this makes life easier and more predictable._> 
+At this time, the encryption algorithm and any key is unknown. The `sign` input is also unknown. Could it be the encryption key?
 
-* **Notes:**
+The App Version type appears to be an integer
 
-  <_This is where all uncertainties, commentary, discussion etc. can go. I recommend timestamping and identifying oneself when leaving comments here._> 
+Although some parameters are optional, changing their values, or choosing whether to include or exclude them will impact that token that the API returns.
