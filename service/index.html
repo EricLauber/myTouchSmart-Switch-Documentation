@@ -219,21 +219,6 @@
 
   
   
-  
-    <li class="md-nav__item">
-      <a href="../about/" class="md-nav__link">
-        About
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
     
   
   
@@ -243,7 +228,7 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
       
@@ -252,13 +237,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_3">
+        <label class="md-nav__link" for="__nav_2">
           Endpoints
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Endpoints" data-md-level="1">
-        <label class="md-nav__title" for="__nav_3">
+        <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           Endpoints
         </label>
@@ -305,9 +290,77 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#login" class="md-nav__link">
-    Login
+  <a href="#log-into-mytouchsmart" class="md-nav__link">
+    Log into myTouchSmart
   </a>
+  
+    <nav class="md-nav" aria-label="Log into myTouchSmart">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#url" class="md-nav__link">
+    URL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method" class="md-nav__link">
+    Method:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url-parameters" class="md-nav__link">
+    URL Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#success-response" class="md-nav__link">
+    Success Response:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-responses" class="md-nav__link">
+    Error Responses:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sample-call" class="md-nav__link">
+    Sample Call:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    Notes:
+  </a>
+  
+    <nav class="md-nav" aria-label="Notes:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#url-parameters_1" class="md-nav__link">
+    URL Parameters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -354,9 +407,77 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#login" class="md-nav__link">
-    Login
+  <a href="#log-into-mytouchsmart" class="md-nav__link">
+    Log into myTouchSmart
   </a>
+  
+    <nav class="md-nav" aria-label="Log into myTouchSmart">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#url" class="md-nav__link">
+    URL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method" class="md-nav__link">
+    Method:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url-parameters" class="md-nav__link">
+    URL Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#success-response" class="md-nav__link">
+    Success Response:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-responses" class="md-nav__link">
+    Error Responses:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sample-call" class="md-nav__link">
+    Sample Call:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    Notes:
+  </a>
+  
+    <nav class="md-nav" aria-label="Notes:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#url-parameters_1" class="md-nav__link">
+    URL Parameters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -378,66 +499,70 @@
                 
                 
                 <h1 id="service">Service</h1>
-<h2 id="login"><strong>Login</strong></h2>
+<p>Service appears to provide access to information that is account-focused instead of device-focused.</p>
+<h2 id="log-into-mytouchsmart">Log into myTouchSmart</h2>
+<hr />
 <p>Provide user credentials to myTouchSmart in order to generate a token used in subsequent calls.</p>
-<ul>
-<li><strong>URL</strong></li>
-</ul>
-<p>api/service/user/login/</p>
-<ul>
-<li><strong>Method:</strong></li>
-</ul>
-<p>&lt;<em>The request type</em>&gt;</p>
-<p><code>GET</code></p>
-<ul>
-<li><strong>URL Params</strong></li>
-</ul>
-<p>&lt;<em>If URL params exist, specify them in accordance with name mentioned in URL section. Separate into optional and required. Document data constraints.</em>&gt; </p>
-<p><strong>Required:</strong></p>
-<p><code>password=[encryptedstring]</code>
-   <code>username=[emailaddress]</code></p>
-<p><strong>Optional (are these actually optional?):</strong></p>
-<p><code>phoneType=</code>
-   <code>appType=</code>
-   <code>sign=</code>
-   <code>phoneSysVersion=</code></p>
-<ul>
-<li><strong>Data Params</strong></li>
-</ul>
-<p>&lt;<em>If making a post request, what should the body payload look like? URL Params rules apply here too.</em>&gt;</p>
-<ul>
-<li><strong>Success Response:</strong></li>
-</ul>
-<p>&lt;<em>What should the status code be on success and is there any returned data? This is useful when people need to to know what their callbacks should expect!</em>&gt;</p>
-<ul>
-<li>
-<p><strong>Code:</strong> 200 <br />
-    <strong>Content:</strong> <code>{ id : 12 }</code></p>
-</li>
-<li>
-<p><strong>Error Response:</strong></p>
-</li>
-</ul>
-<p>&lt;<em>Most endpoints will have many ways they can fail. From unauthorized access, to wrongful parameters etc. All of those should be liste d here. It might seem repetitive, but it helps prevent assumptions from being made where they should be.</em>&gt;</p>
-<ul>
-<li><strong>Code:</strong> 401 UNAUTHORIZED <br />
-    <strong>Content:</strong> <code>{ error : "Log in" }</code></li>
-</ul>
-<p>OR</p>
-<ul>
-<li>
-<p><strong>Code:</strong> 422 UNPROCESSABLE ENTRY <br />
-    <strong>Content:</strong> <code>{ error : "Email Invalid" }</code></p>
-</li>
-<li>
-<p><strong>Sample Call:</strong></p>
-</li>
-</ul>
-<p>&lt;<em>Just a sample call to your endpoint in a runnable format ($.ajax call or a curl request) - this makes life easier and more predictable.</em>&gt; </p>
-<ul>
-<li><strong>Notes:</strong></li>
-</ul>
-<p>&lt;<em>This is where all uncertainties, commentary, discussion etc. can go. I recommend timestamping and identifying oneself when leaving comments here.</em>&gt; </p>
+<h3 id="url">URL</h3>
+<p><code>https://myts.yunext.com/api/service/user/login/MYTS</code></p>
+<h3 id="method">Method:</h3>
+<p><code>POST</code></p>
+<h3 id="url-parameters">URL Parameters</h3>
+<p>Required:
+- <code>username=[Email Address]</code>
+- <code>password=[Encrypted String]</code></p>
+<p>Optional:
+- <code>phoneType=[Model of Phone]</code>
+- <code>appType=[Type of the calling application]</code>
+- <code>appVersion=[Version of the calling application]</code>
+- <code>sign=[sign]</code>
+- <code>phoneSysVersion=[Android version]</code></p>
+<h3 id="success-response">Success Response:</h3>
+<p>Code: 600 <br/>
+Content:</p>
+<pre><code>{
+  &quot;code&quot;: 600,
+  &quot;data&quot;: {
+      &quot;token&quot;: &quot;[token]&quot;
+  },
+  &quot;success&quot;: true
+}
+</code></pre>
+<h3 id="error-responses">Error Responses:</h3>
+<p>Code: 400 <br />
+Returns an Apache Tomcat/8.0.39 Error Report:</p>
+<p>Content:</p>
+<pre><code>HTTP Status 400
+The request sent by the client was syntactically incorrect.
+Apache Tomcat/8.0.39
+</code></pre>
+<p>Code: 602 <br />
+Content:</p>
+<pre><code>{
+  &quot;msg&quot;: &quot;username or password error&quot;,
+  &quot;code&quot;: 602,
+  &quot;success&quot;: false
+}
+</code></pre>
+<h3 id="sample-call">Sample Call:</h3>
+<p>For the required inputs:
+- Username: YourAccount@domain.com
+- Encrypted Password: SomePassword</p>
+<p><code>curl -d "username=YourAccount%40domain.com&amp;password=SomePassword" https://myts.yunext.com/api/service/user/login/MYTS</code></p>
+<p>For the required and optional inputs:
+- Username: YourAccount@domain.com
+- Encrypted Password: SomePassword
+- Phone Type: Pixel 5
+- App Version: myTS 2.2
+- App Type: 1
+- Sign: 123XYZ
+- Phone System Version: Android 12</p>
+<p><code>curl -d "username=YourAccount%40domain.com&amp;password=SomePassword&amp;phoneType=Pixel%205&amp;appVersion=2.2&amp;appType=1&amp;sign=123XYZ&amp;phoneSysVersion=Android%3A12" https://myts.yunext.com/api/service/user/login/MYTS</code></p>
+<h2 id="notes">Notes:</h2>
+<h3 id="url-parameters_1">URL Parameters</h3>
+<p>At this time, the encryption algorithm and any key is unknown. The <code>sign</code> input is also unknown. Could it be the encryption key?</p>
+<p>The App Version type appears to be an integer</p>
+<p>Although some parameters are optional, changing their values, or choosing whether to include or exclude them will impact that token that the API returns.</p>
                 
               
               
@@ -457,7 +582,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../about/" class="md-footer__link md-footer__link--prev" aria-label="Previous: About" rel="prev">
+        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -466,7 +591,7 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              About
+              Home
             </div>
           </div>
         </a>
