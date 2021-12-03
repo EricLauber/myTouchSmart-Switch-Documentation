@@ -306,7 +306,7 @@
         
           <li class="md-nav__item">
   <a href="#method" class="md-nav__link">
-    Method:
+    Method
   </a>
   
 </li>
@@ -320,21 +320,21 @@
         
           <li class="md-nav__item">
   <a href="#success-response" class="md-nav__link">
-    Success Response:
+    Success Response
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#error-responses" class="md-nav__link">
-    Error Responses:
+    Error Responses
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#sample-call" class="md-nav__link">
-    Sample Call:
+    Sample Call
   </a>
   
 </li>
@@ -346,10 +346,10 @@
       
         <li class="md-nav__item">
   <a href="#notes" class="md-nav__link">
-    Notes:
+    Notes
   </a>
   
-    <nav class="md-nav" aria-label="Notes:">
+    <nav class="md-nav" aria-label="Notes">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -423,7 +423,7 @@
         
           <li class="md-nav__item">
   <a href="#method" class="md-nav__link">
-    Method:
+    Method
   </a>
   
 </li>
@@ -437,21 +437,21 @@
         
           <li class="md-nav__item">
   <a href="#success-response" class="md-nav__link">
-    Success Response:
+    Success Response
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#error-responses" class="md-nav__link">
-    Error Responses:
+    Error Responses
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#sample-call" class="md-nav__link">
-    Sample Call:
+    Sample Call
   </a>
   
 </li>
@@ -463,10 +463,10 @@
       
         <li class="md-nav__item">
   <a href="#notes" class="md-nav__link">
-    Notes:
+    Notes
   </a>
   
-    <nav class="md-nav" aria-label="Notes:">
+    <nav class="md-nav" aria-label="Notes">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -505,19 +505,37 @@
 <p>Provide user credentials to myTouchSmart in order to generate a token used in subsequent calls.</p>
 <h3 id="url">URL</h3>
 <p><code>https://myts.yunext.com/api/service/user/login/MYTS</code></p>
-<h3 id="method">Method:</h3>
+<h3 id="method">Method</h3>
 <p><code>POST</code></p>
 <h3 id="url-parameters">URL Parameters</h3>
-<p>Required:
-- <code>username=[Email Address]</code>
-- <code>password=[Encrypted String]</code></p>
-<p>Optional:
-- <code>phoneType=[Model of Phone]</code>
-- <code>appType=[Type of the calling application]</code>
-- <code>appVersion=[Version of the calling application]</code>
-- <code>sign=[sign]</code>
-- <code>phoneSysVersion=[Android version]</code></p>
-<h3 id="success-response">Success Response:</h3>
+<p>Required:</p>
+<ul>
+<li>
+<p><code>username=[Email Address]</code></p>
+</li>
+<li>
+<p><code>password=[Encrypted String]</code></p>
+</li>
+</ul>
+<p>Optional:</p>
+<ul>
+<li>
+<p><code>phoneType=[Model of Phone]</code></p>
+</li>
+<li>
+<p><code>appType=[Type of the calling application]</code></p>
+</li>
+<li>
+<p><code>appVersion=[Version of the calling application]</code></p>
+</li>
+<li>
+<p><code>sign=[sign]</code></p>
+</li>
+<li>
+<p><code>phoneSysVersion=[Android version]</code></p>
+</li>
+</ul>
+<h3 id="success-response">Success Response</h3>
 <p>Code: 600 <br/>
 Content:</p>
 <pre><code>{
@@ -528,7 +546,7 @@ Content:</p>
   &quot;success&quot;: true
 }
 </code></pre>
-<h3 id="error-responses">Error Responses:</h3>
+<h3 id="error-responses">Error Responses</h3>
 <p>Code: 400 <br />
 Returns an Apache Tomcat/8.0.39 Error Report:</p>
 <p>Content:</p>
@@ -544,21 +562,43 @@ Content:</p>
   &quot;success&quot;: false
 }
 </code></pre>
-<h3 id="sample-call">Sample Call:</h3>
-<p>For the required inputs:
-- Username: YourAccount@domain.com
-- Encrypted Password: SomePassword</p>
+<h3 id="sample-call">Sample Call</h3>
+<p>For the required inputs:</p>
+<ul>
+<li>
+<p>Username: YourAccount@domain.com</p>
+</li>
+<li>
+<p>Encrypted Password: SomePassword</p>
+</li>
+</ul>
 <p><code>curl -d "username=YourAccount%40domain.com&amp;password=SomePassword" https://myts.yunext.com/api/service/user/login/MYTS</code></p>
-<p>For the required and optional inputs:
-- Username: YourAccount@domain.com
-- Encrypted Password: SomePassword
-- Phone Type: Pixel 5
-- App Version: myTS 2.2
-- App Type: 1
-- Sign: 123XYZ
-- Phone System Version: Android 12</p>
+<p>For the required and optional inputs:</p>
+<ul>
+<li>
+<p>Username: YourAccount@domain.com</p>
+</li>
+<li>
+<p>Encrypted Password: SomePassword</p>
+</li>
+<li>
+<p>Phone Type: Pixel 5</p>
+</li>
+<li>
+<p>App Version: myTS 2.2</p>
+</li>
+<li>
+<p>App Type: 1</p>
+</li>
+<li>
+<p>Sign: 123XYZ</p>
+</li>
+<li>
+<p>Phone System Version: Android 12</p>
+</li>
+</ul>
 <p><code>curl -d "username=YourAccount%40domain.com&amp;password=SomePassword&amp;phoneType=Pixel%205&amp;appVersion=2.2&amp;appType=1&amp;sign=123XYZ&amp;phoneSysVersion=Android%3A12" https://myts.yunext.com/api/service/user/login/MYTS</code></p>
-<h2 id="notes">Notes:</h2>
+<h2 id="notes">Notes</h2>
 <h3 id="url-parameters_1">URL Parameters</h3>
 <p>At this time, the encryption algorithm and any key is unknown. The <code>sign</code> input is also unknown. Could it be the encryption key?</p>
 <p>The App Version type appears to be an integer</p>
