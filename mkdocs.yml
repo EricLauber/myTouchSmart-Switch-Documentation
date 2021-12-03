@@ -4,6 +4,9 @@ nav:
   - Home: index.md
   - Endpoints:
     - Service: service.md
+    - Device: device.md
+    - Version: version.md
+    - Sun: sun.md
 
 theme:
   name: material
