@@ -16,7 +16,6 @@ Provide user credentials to myTouchSmart in order to generate a token used in su
   
 ### URL Parameters
 
-
 Required:
 
 - `username=[Email Address]`
