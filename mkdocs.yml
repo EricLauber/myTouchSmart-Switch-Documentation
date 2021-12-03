@@ -2,7 +2,6 @@ site_name: myTouchSmart Switch Documentation
 
 nav:
   - Home: index.md
-  - About: about.md
   - Endpoints:
     - Service: service.md
 
